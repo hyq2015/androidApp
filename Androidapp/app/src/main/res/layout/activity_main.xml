@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.genwoshua.dev.androidapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="sans-serif-condensed"
+            android:text="选择较大的数字"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/message"
+            android:layout_alignStart="@+id/message"
+            android:layout_alignTop="@+id/button2"
+            android:background="@color/colorPrimary"
+            android:onClick="LeftBtnClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/message"
+            android:layout_alignRight="@+id/message"
+            android:layout_below="@+id/message"
+            android:layout_marginTop="116dp"
+            android:onClick="RightBtnClick"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/generateRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:onClick="generateRandomNumber"
+            android:text="生成随机数" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>
