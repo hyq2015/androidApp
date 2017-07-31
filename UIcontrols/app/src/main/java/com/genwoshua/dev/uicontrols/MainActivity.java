@@ -18,6 +18,8 @@ public class MainActivity extends ListActivity {
         setListAdapter(adapter);
 
         adapter.add(new ListCellData(this,"Radiogroup",new Intent(this,AtyUseingRadiogroup.class)));
+        adapter.add(new ListCellData(this,"datepicker",new Intent(this,AtyUsingDatepicker.class)));
+        adapter.add(new ListCellData(this,"timepicker",new Intent(this,AtyUsingTimePicker.class)));
     }
 
     @Override

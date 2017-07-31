@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AtyUseingRadiogroup"></activity>
+        <activity android:name=".AtyUsingDatepicker"></activity>
+        <activity android:name=".AtyUsingTimePicker"></activity>
     </application>
 
 </manifest>
