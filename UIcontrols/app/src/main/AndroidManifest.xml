@@ -22,6 +22,12 @@
         <activity android:name=".AtyUseingRadiogroup"></activity>
         <activity android:name=".AtyUsingDatepicker"></activity>
         <activity android:name=".AtyUsingTimePicker"></activity>
+        <activity android:name=".AtyUsingSpinner"></activity>
+        <activity android:name=".AtyUsingProgress"></activity>
+        <activity android:name=".AtyUsingSeekbar"></activity>
+        <activity android:name=".AtyUsingProgressDialog"></activity>
+        <activity android:name=".AtyUsingNotifycation"></activity>
+        <activity android:name=".AtyUsingRatingBar"></activity>
     </application>
 
 </manifest>

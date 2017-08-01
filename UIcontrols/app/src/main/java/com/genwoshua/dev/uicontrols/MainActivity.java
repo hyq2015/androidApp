@@ -20,6 +20,12 @@ public class MainActivity extends ListActivity {
         adapter.add(new ListCellData(this,"Radiogroup",new Intent(this,AtyUseingRadiogroup.class)));
         adapter.add(new ListCellData(this,"datepicker",new Intent(this,AtyUsingDatepicker.class)));
         adapter.add(new ListCellData(this,"timepicker",new Intent(this,AtyUsingTimePicker.class)));
+        adapter.add(new ListCellData(this,"spinner",new Intent(this,AtyUsingSpinner.class)));
+        adapter.add(new ListCellData(this,"progressbar",new Intent(this,AtyUsingProgress.class)));
+        adapter.add(new ListCellData(this,"seekbar",new Intent(this,AtyUsingSeekbar.class)));
+        adapter.add(new ListCellData(this,"progressdialog",new Intent(this,AtyUsingProgressDialog.class)));
+        adapter.add(new ListCellData(this,"notifycation",new Intent(this,AtyUsingNotifycation.class)));
+        adapter.add(new ListCellData(this,"ratingbar",new Intent(this,AtyUsingRatingBar.class)));
     }
 
     @Override
